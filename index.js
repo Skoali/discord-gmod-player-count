@@ -21,7 +21,7 @@ const updateChannel = async () => {
 };
 
 client.on("ready", () => {
-    console.log("[BOT] Connected to Discord.");
+    console.log("[BOT] Connecté à Discord.");
     updateChannel();
     setInterval(updateChannel, 60000*0.05);
 });
