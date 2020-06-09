@@ -1,6 +1,25 @@
 {
+  "name": "discord-gmod-player-count",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
+    "chalk": "^4.1.0",
     "discord.js": "^12.2.0",
     "gamedig": "^2.0.20"
   },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skoali/discord-gmod-player-count.git"
+  },
+  "author": "Skoali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skoali/discord-gmod-player-count/issues"
+  },
+  "homepage": "https://github.com/Skoali/discord-gmod-player-count#readme"
 }
