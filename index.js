@@ -1,6 +1,7 @@
 const config = require("./config.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const chalk = require('chalk')
 client.config = config;
 
 const gamedig = require("gamedig");
@@ -21,7 +22,7 @@ const updateChannel = async () => {
 };
 
 client.on("ready", () => {
-    console.log("[BOT] Connected to Discord.");
+    console.log(chalk.green("[BOT] Connected to Discord."))
     updateChannel();
     setInterval(updateChannel, 60000*0.05);
 });
