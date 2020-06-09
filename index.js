@@ -10,9 +10,8 @@ client.config = config;
 var nb = 1000
 
 const updateChannel = async () => {
-		
+
 		const channel = client.channels.cache.get(config.playerCountChannelID);
-		
 		if(!channel) throw new Error("La salon spécifié dans la configuration n'existe pas !");
 		
 	    const stats = await gamedig.query({
@@ -27,9 +26,12 @@ const updateChannel = async () => {
 };
 
 client.on("ready", () => {
-    console.log(chalk.green("[BOT] Connected to Discord."));
-    updateChannel();
-    setInterval(updateChannel, 60000*0.05);
+
+	console.log(chalk.green("[BOT] Connected to Discord."));
+	
+	updateChannel();
+	setInterval(updateChannel, 60000*0.05);
+	
 });
 
 client.login(config.token);
